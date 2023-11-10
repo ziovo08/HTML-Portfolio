@@ -1,7 +1,7 @@
 body {
-    background-color: red;
 }
 
 header li {
     border: 2px dotted blue;
+    display: block;
 }
