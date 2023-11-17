@@ -1,5 +1,72 @@
-nav li {
-    background-color: yellow;
-    border: 2px dotted blue;
-    display: block;
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Serif+Display&display=swap');
+
+body {
+    height: 125vh;
+    background-color: papayawhip;
+    margin-top: 80px;
+    padding: 30px;
+}
+
+/* h1 name title */
+
+h1 {
+    background-color: skyblue;
+    color: antiquewhite;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+
+/* h2 element fonts and color */ 
+h2 {
+    color: palevioletred;
+    font-family: font-family: 'Archivo Black', sans-serif;
+    font-family: 'DM Serif Display', serif;;
+}
+
+#biography {
+    background-color: azure;
+    padding: 10px 
+}
+
+/* logo style */
+.logo {
+    border: 10px ridge;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column; 
+}
+
+/* header img style for nav menu header */ 
+header img {
+    height: 25px;
+    margin-left: 40px;
+}
+
+/* header positioning */
+header {
+    background-color: rgb(236, 225, 203);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 25px 0 rgb(93, 138, 156);
+}
+
+/* nav content styling */ 
+header * {
+    display: inline;
+}
+
+/* header li spacing */
+header li {
+    margin: 20px;
+}
+
+header li a {
+    color: black;
+    text-decoration: none;
 }
