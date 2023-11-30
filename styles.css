@@ -9,6 +9,25 @@
     box-sizing: border-box;
 }
 
+/* button counter */
+.odd{
+color: blue;
+}
+
+.even{
+color: red;
+}
+
+/*zebra list */
+#numbers li:nth-child(odd) {
+  background-color: #777;
+}
+
+#numbers li:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+
 .container{
     background: rgb(28, 31, 33);
     width: 100%;
