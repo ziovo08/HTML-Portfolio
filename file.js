@@ -5,7 +5,7 @@ document.getElementById('footer').innerHTML = `Copyright © ${currentYear}  Zoe 
 
 //Button Alert
 document.getElementById('btn-alert').onclick = () => {
-    alert('Hello World!');
+    alert('Thanks for pressing!');
 };
 
 //Hover
@@ -19,3 +19,25 @@ hoverButton.onmouseleave = () => {
 };
 
 //Button Increment
+let count = 1;
+document.getElementById('btn-counter').onclick = () => {
+    count = count + 1;
+    document.getElementById('txt-counter').innerHTML = count;
+    //Odd or Even 
+    const isEven = count % 2 === 0;
+    const counterElement = document.getElementById('txt-counter');
+    counterElement.classList.remove('even', 'odd');
+    counterElement.classList.add(isEven ? 'even' : 'odd');
+};
+
+//Loops
+const numbersList = document.getElementById('numbers');
+for (let i = 1; i <= 100; i = i + 1) 
+{
+    const listItem = document.createElement('li');
+    listItem.textContent = i % 2 === 0 ? 'even' : 'odd';
+    numbersList.appendChild(listItem);
+};
+
+
+    
